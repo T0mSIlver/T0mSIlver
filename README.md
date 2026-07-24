@@ -1,6 +1,6 @@
 ### Tom Vaucourt
 
-AI engineer — LLMs, local inference, and developer tooling. I build end-to-end systems and contribute upstream to the tools I depend on.
+AI engineer — Local inference and agentic developer tooling. I build end-to-end systems and contribute upstream to the tools I depend on.
 
 **Now:** on-device speech for Apple Silicon — shipping [localvoxtral](https://github.com/T0mSIlver/localvoxtral) and contributing the Voxtral realtime inference path to [mlx-audio-swift](https://github.com/Blaizzy/mlx-audio-swift).
 
