@@ -18,14 +18,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
-- ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) — [anthropics/claude-code](https://github.com/anthropics/claude-code)
-- ![Open issue](icons/issue_open.svg) [Hosting: llama.cpp needs `--reasoning-format none`](https://github.com/microsoft/fara/issues/82) — [microsoft/fara](https://github.com/microsoft/fara)
-- ![Open issue](icons/issue_open.svg) [Recovered daemon-transport bounce leaves a permanent error on the workspace row](https://github.com/manaflow-ai/cmux/issues/8917) — [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux)
-- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime: load checkpoints with a quantized tied embedding](https://github.com/Blaizzy/mlx-audio-swift/pull/232) — [Blaizzy/mlx-audio-swift](https://github.com/Blaizzy/mlx-audio-swift)
-- ![Merged pull request](icons/pr_merged.svg) [Hoist per-layer-invariant attention inputs out of the Voxtral layer loops](https://github.com/Blaizzy/mlx-audio-swift/pull/231) — [Blaizzy/mlx-audio-swift](https://github.com/Blaizzy/mlx-audio-swift)
-- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: stop clearing the Metal buffer pool on every step](https://github.com/Blaizzy/mlx-audio-swift/pull/229) — [Blaizzy/mlx-audio-swift](https://github.com/Blaizzy/mlx-audio-swift)
-- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: incremental mel/conv front end (O(N²) → O(N) per utterance)](https://github.com/Blaizzy/mlx-audio-swift/pull/230) — [Blaizzy/mlx-audio-swift](https://github.com/Blaizzy/mlx-audio-swift)
-- ![Merged pull request](icons/pr_merged.svg) [Fix float32 leak in VoxtralRealtime streaming](https://github.com/Blaizzy/mlx-audio-swift/pull/226) — [Blaizzy/mlx-audio-swift](https://github.com/Blaizzy/mlx-audio-swift)
+- ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
+- ![Open issue](icons/issue_open.svg) [Hosting: llama.cpp needs `--reasoning-format none`](https://github.com/microsoft/fara/issues/82) `microsoft/fara`
+- ![Open issue](icons/issue_open.svg) [Recovered daemon-transport bounce leaves a permanent error on the workspace row](https://github.com/manaflow-ai/cmux/issues/8917) `manaflow-ai/cmux`
+- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime: load checkpoints with a quantized tied embedding](https://github.com/Blaizzy/mlx-audio-swift/pull/232) `Blaizzy/mlx-audio-swift`
+- ![Merged pull request](icons/pr_merged.svg) [Hoist per-layer-invariant attention inputs out of the Voxtral layer loops](https://github.com/Blaizzy/mlx-audio-swift/pull/231) `Blaizzy/mlx-audio-swift`
+- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: stop clearing the Metal buffer pool on every step](https://github.com/Blaizzy/mlx-audio-swift/pull/229) `Blaizzy/mlx-audio-swift`
+- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: incremental mel/conv front end (O(N²) → O(N) per utterance)](https://github.com/Blaizzy/mlx-audio-swift/pull/230) `Blaizzy/mlx-audio-swift`
+- ![Merged pull request](icons/pr_merged.svg) [Fix float32 leak in VoxtralRealtime streaming](https://github.com/Blaizzy/mlx-audio-swift/pull/226) `Blaizzy/mlx-audio-swift`
 <!-- recent_contributions ends -->
 
 <sub>Updated daily by [`build_readme.py`](build_readme.py).</sub>

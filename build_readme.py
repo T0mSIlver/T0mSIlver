@@ -63,10 +63,7 @@ def render(item):
     repo = item["repository_url"].split("/repos/")[-1]
     title = item["title"].replace("[", r"\[").replace("]", r"\]")
     name, alt = icon(item)
-    return (
-        f"- ![{alt}](icons/{name}.svg) [{title}]({item['html_url']}) — "
-        f"[{repo}](https://github.com/{repo})"
-    )
+    return f"- ![{alt}](icons/{name}.svg) [{title}]({item['html_url']}) `{repo}`"
 
 
 def replace_chunk(content, marker, chunk):
