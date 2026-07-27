@@ -10,7 +10,9 @@ leak into this public README. Unauthenticated search allows 10 requests/min
 and this makes one request a day.
 
 Pattern from simonw/simonw (replace_chunk, Apache-2.0) and
-nickcharlton/nickcharlton (search query shape).
+nickcharlton/nickcharlton (search query shape). State icons in icons/ are
+Octicons (primer/octicons, MIT) recolored with Primer's state colors; the
+media query inside each SVG handles dark mode.
 """
 
 import json
@@ -42,19 +44,27 @@ def fetch_items():
         return json.load(response)["items"]
 
 
-def label(item):
+def icon(item):
+    """Icon name in icons/ (recolored Octicons) and its alt text."""
     if "pull_request" in item:
         if item["pull_request"].get("merged_at"):
-            return "merged"
-        return "open PR" if item["state"] == "open" else "closed PR"
-    return f"{item['state']} issue"
+            return "pr_merged", "Merged pull request"
+        if item.get("draft"):
+            return "pr_draft", "Draft pull request"
+        if item["state"] == "open":
+            return "pr_open", "Open pull request"
+        return "pr_closed", "Closed pull request"
+    if item["state"] == "open":
+        return "issue_open", "Open issue"
+    return "issue_closed", "Closed issue"
 
 
 def render(item):
     repo = item["repository_url"].split("/repos/")[-1]
     title = item["title"].replace("[", r"\[").replace("]", r"\]")
+    name, alt = icon(item)
     return (
-        f"- **{label(item)}** [{title}]({item['html_url']}) — "
+        f"- ![{alt}](icons/{name}.svg) [{title}]({item['html_url']}) — "
         f"[{repo}](https://github.com/{repo})"
     )
 
