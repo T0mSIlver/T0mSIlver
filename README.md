@@ -28,8 +28,6 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 - ![Merged pull request](icons/pr_merged.svg) [Fix float32 leak in VoxtralRealtime streaming](https://github.com/Blaizzy/mlx-audio-swift/pull/226) `Blaizzy/mlx-audio-swift`
 <!-- recent_contributions ends -->
 
-<sub>Updated daily by [`build_readme.py`](build_readme.py).</sub>
-
 #### Elsewhere
 
 [LinkedIn](https://www.linkedin.com/in/tomvaucourt/) · [Hugging Face](https://huggingface.co/T0mSIlver) · [npm](https://www.npmjs.com/~t0msilver)
