@@ -18,7 +18,7 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
-- ![Open issue](icons/issue_open.svg) [Recovered daemon-transport bounce leaves a permanent error on the workspace row](https://github.com/manaflow-ai/cmux/issues/8917) `manaflow-ai/cmux`
+- ![Closed issue](icons/issue_closed.svg) [Recovered daemon-transport bounce leaves a permanent error on the workspace row](https://github.com/manaflow-ai/cmux/issues/8917) `manaflow-ai/cmux`
 - ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
 - ![Open issue](icons/issue_open.svg) [Hosting: llama.cpp needs `--reasoning-format none`](https://github.com/microsoft/fara/issues/82) `microsoft/fara`
 - ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime: load checkpoints with a quantized tied embedding](https://github.com/Blaizzy/mlx-audio-swift/pull/232) `Blaizzy/mlx-audio-swift`
