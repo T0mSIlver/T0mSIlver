@@ -15,6 +15,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Rebuild recent-contributions section
+        # Discussions are GraphQL-only, and GraphQL always needs a token. This
+        # one is scoped to this repo alone, so it cannot read my private repos.
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: python3 build_readme.py
 
       - name: Commit and push if changed
