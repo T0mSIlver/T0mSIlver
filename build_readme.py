@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 """Rebuild the "Recently in other projects" section of README.md.
 
-Pulls my recent public PRs and issues in repos I don't own from the GitHub
-search API and rewrites the block between the marker comments. Run daily by
-.github/workflows/update-readme.yml; run manually with `python3 build_readme.py`.
+Pulls my recent public PRs, issues and discussions in repos I don't own and
+rewrites the block between the marker comments. Run daily by
+.github/workflows/update-readme.yml; run manually with
+`GITHUB_TOKEN=$(gh auth token) python3 build_readme.py`.
 
-Deliberately unauthenticated: with no token, private repo titles can never
-leak into this public README. Unauthenticated search allows 10 requests/min
-and this makes one request a day.
+Two APIs, because they don't overlap: REST /search/issues covers PRs and
+issues and needs no token, while discussions exist only in GraphQL, which
+always requires one. Some upstreams (starlette, for one) route bug reports to
+Discussions instead of Issues, so leaving them out drops real contributions.
+
+Private repo titles can never leak into this public README: every query
+carries `is:public`, and in CI the GraphQL call uses the workflow's
+GITHUB_TOKEN, an installation token scoped to this repo alone that cannot
+read my private repos in the first place. If GITHUB_TOKEN is unset the
+discussion half is skipped rather than failing the build, so an
+unauthenticated local run still refreshes the PRs and issues.
 
 Pattern from simonw/simonw (replace_chunk, Apache-2.0) and
 nickcharlton/nickcharlton (search query shape). State icons in icons/ are
@@ -16,8 +25,11 @@ media query inside each SVG handles dark mode.
 """
 
 import json
+import os
 import pathlib
 import re
+import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -26,25 +38,71 @@ MAX_ITEMS = 8
 MARKER = "recent_contributions"
 # Issues search uses advanced syntax (GitHub default since 2025): multiple
 # negative qualifiers AND together, so -user: excludes all my own repos.
+# GraphQL discussion search accepts the same qualifiers unchanged.
 QUERY = f"author:{USER} -user:{USER} is:public sort:updated-desc"
 
+DISCUSSION_QUERY = """
+query($q: String!) {
+  search(query: $q, type: DISCUSSION, first: 30) {
+    nodes {
+      ... on Discussion {
+        title
+        url
+        updatedAt
+        isAnswered
+        repository { nameWithOwner }
+      }
+    }
+  }
+}
+"""
 
-def fetch_items():
-    url = "https://api.github.com/search/issues?" + urllib.parse.urlencode(
-        {"q": QUERY, "per_page": 30}
-    )
+
+def get_json(url, data=None, headers=None):
     request = urllib.request.Request(
         url,
+        data=data,
         headers={
             "Accept": "application/vnd.github+json",
             "User-Agent": f"{USER}-profile-readme",
+            **(headers or {}),
         },
     )
     with urllib.request.urlopen(request) as response:
-        return json.load(response)["items"]
+        return json.load(response)
 
 
-def icon(item):
+def fetch_issues():
+    """Recent public PRs and issues, via the unauthenticated REST search API."""
+    url = "https://api.github.com/search/issues?" + urllib.parse.urlencode(
+        {"q": QUERY, "per_page": 30}
+    )
+    return get_json(url)["items"]
+
+
+def fetch_discussions():
+    """Recent public discussions, via GraphQL. Empty list if unauthenticated."""
+    token = os.environ.get("GITHUB_TOKEN")
+    if not token:
+        print("GITHUB_TOKEN unset: skipping discussions", file=sys.stderr)
+        return []
+    body = json.dumps({"query": DISCUSSION_QUERY, "variables": {"q": QUERY}})
+    try:
+        payload = get_json(
+            "https://api.github.com/graphql",
+            data=body.encode(),
+            headers={"Authorization": f"Bearer {token}"},
+        )
+    except urllib.error.URLError as error:
+        print(f"discussion search failed, skipping: {error}", file=sys.stderr)
+        return []
+    if payload.get("errors"):
+        print(f"discussion search failed, skipping: {payload['errors']}", file=sys.stderr)
+        return []
+    return payload["data"]["search"]["nodes"]
+
+
+def issue_icon(item):
     """Icon name in icons/ (recolored Octicons) and its alt text."""
     if "pull_request" in item:
         if item["pull_request"].get("merged_at"):
@@ -59,11 +117,32 @@ def icon(item):
     return "issue_closed", "Closed issue"
 
 
-def render(item):
-    repo = item["repository_url"].split("/repos/")[-1]
-    title = item["title"].replace("[", r"\[").replace("]", r"\]")
-    name, alt = icon(item)
-    return f"- ![{alt}](icons/{name}.svg) [{title}]({item['html_url']}) `{repo}`"
+def from_issue(item):
+    return {
+        "updated": item["updated_at"],
+        "title": item["title"],
+        "url": item["html_url"],
+        "repo": item["repository_url"].split("/repos/")[-1],
+        "icon": issue_icon(item),
+    }
+
+
+def from_discussion(node):
+    return {
+        "updated": node["updatedAt"],
+        "title": node["title"],
+        "url": node["url"],
+        "repo": node["repository"]["nameWithOwner"],
+        "icon": ("discussion_answered", "Answered discussion")
+        if node["isAnswered"]
+        else ("discussion", "Discussion"),
+    }
+
+
+def render(entry):
+    title = entry["title"].replace("[", r"\[").replace("]", r"\]")
+    name, alt = entry["icon"]
+    return f"- ![{alt}](icons/{name}.svg) [{title}]({entry['url']}) `{entry['repo']}`"
 
 
 def replace_chunk(content, marker, chunk):
@@ -77,11 +156,15 @@ def replace_chunk(content, marker, chunk):
 
 
 def main():
-    items = fetch_items()[:MAX_ITEMS]
-    chunk = "\n".join(render(item) for item in items)
+    entries = [from_issue(item) for item in fetch_issues()]
+    entries += [from_discussion(node) for node in fetch_discussions()]
+    # Both APIs return ISO-8601 UTC timestamps, which sort lexicographically.
+    entries.sort(key=lambda entry: entry["updated"], reverse=True)
+    entries = entries[:MAX_ITEMS]
+    chunk = "\n".join(render(entry) for entry in entries)
     readme = pathlib.Path(__file__).parent / "README.md"
     readme.write_text(replace_chunk(readme.read_text(), MARKER, chunk))
-    print(f"wrote {len(items)} items")
+    print(f"wrote {len(entries)} items")
 
 
 if __name__ == "__main__":
