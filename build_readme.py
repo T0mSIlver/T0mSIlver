@@ -11,12 +11,18 @@ issues and needs no token, while discussions exist only in GraphQL, which
 always requires one. Some upstreams (starlette, for one) route bug reports to
 Discussions instead of Issues, so leaving them out drops real contributions.
 
-Private repo titles can never leak into this public README: every query
-carries `is:public`, and in CI the GraphQL call uses the workflow's
-GITHUB_TOKEN, an installation token scoped to this repo alone that cannot
-read my private repos in the first place. If GITHUB_TOKEN is unset the
-discussion half is skipped rather than failing the build, so an
-unauthenticated local run still refreshes the PRs and issues.
+`is:public` on both queries is what keeps private repo titles out of this
+public README, and it is the only layer that holds everywhere: a manual run
+authenticates with a personal token that can read every private repo I own.
+CI adds a second layer that covers CI alone -- GITHUB_TOKEN is an
+installation token scoped to this repo and cannot read my private repos in
+the first place -- so don't drop `is:public` on the assumption that the
+token scoping has it covered.
+
+An unset GITHUB_TOKEN is the local-run case and simply skips discussions. A
+token that is set but fails is a real error, and in CI one is always set, so
+it aborts loudly rather than committing a README with the discussions
+silently dropped.
 
 Pattern from simonw/simonw (replace_chunk, Apache-2.0) and
 nickcharlton/nickcharlton (search query shape). State icons in icons/ are
@@ -93,12 +99,11 @@ def fetch_discussions():
             data=body.encode(),
             headers={"Authorization": f"Bearer {token}"},
         )
-    except urllib.error.URLError as error:
-        print(f"discussion search failed, skipping: {error}", file=sys.stderr)
-        return []
+    # ValueError covers json.JSONDecodeError: a 200 whose body isn't JSON.
+    except (urllib.error.URLError, ValueError) as error:
+        raise SystemExit(f"discussion search failed: {error}")
     if payload.get("errors"):
-        print(f"discussion search failed, skipping: {payload['errors']}", file=sys.stderr)
-        return []
+        raise SystemExit(f"discussion search failed: {payload['errors']}")
     return payload["data"]["search"]["nodes"]
 
 
