@@ -18,14 +18,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
-- ![Open pull request](icons/pr_open.svg) [.NET: Add SuppressAssistantName option to ChatClientAgentOptions](https://github.com/microsoft/agent-framework/pull/1822) `microsoft/agent-framework`
+- ![Closed issue](icons/issue_closed.svg) [Prompt-cache reuse can return KV state that doesn't match the keyed prefix (windowed-cache trim contract)](https://github.com/ml-explore/mlx-lm/issues/1494) `ml-explore/mlx-lm`
+- ![Closed issue](icons/issue_closed.svg) [LRUPromptCache: one-token prefixes never match in PromptTrie.search; eviction ignores fetch recency (FIFO, not LRU)](https://github.com/ml-explore/mlx-lm/issues/1495) `ml-explore/mlx-lm`
+- ![Closed pull request](icons/pr_closed.svg) [Fix LRUPromptCache: return one-token prefix matches and refresh LRU recency on fetch](https://github.com/ml-explore/mlx-lm/pull/1496) `ml-explore/mlx-lm`
+- ![Closed pull request](icons/pr_closed.svg) [Prompt cache: never reuse KV that fails to trim to the keyed prefix](https://github.com/ml-explore/mlx-lm/pull/1502) `ml-explore/mlx-lm`
+- ![Closed pull request](icons/pr_closed.svg) [Prompt cache: don't reuse a slid windowed cache as a keyed prefix](https://github.com/ml-explore/mlx-lm/pull/1503) `ml-explore/mlx-lm`
+- ![Closed pull request](icons/pr_closed.svg) [.NET: Add SuppressAssistantName option to ChatClientAgentOptions](https://github.com/microsoft/agent-framework/pull/1822) `microsoft/agent-framework`
 - ![Answered discussion](icons/discussion_answered.svg) [Docs: "against independent benchmarks" link is dead (TechEmpower benchmarks site)](https://github.com/Kludex/starlette/discussions/3433) `Kludex/starlette`
 - ![Closed issue](icons/issue_closed.svg) [Recovered daemon-transport bounce leaves a permanent error on the workspace row](https://github.com/manaflow-ai/cmux/issues/8917) `manaflow-ai/cmux`
-- ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
-- ![Open issue](icons/issue_open.svg) [Hosting: llama.cpp needs `--reasoning-format none`](https://github.com/microsoft/fara/issues/82) `microsoft/fara`
-- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime: load checkpoints with a quantized tied embedding](https://github.com/Blaizzy/mlx-audio-swift/pull/232) `Blaizzy/mlx-audio-swift`
-- ![Merged pull request](icons/pr_merged.svg) [Hoist per-layer-invariant attention inputs out of the Voxtral layer loops](https://github.com/Blaizzy/mlx-audio-swift/pull/231) `Blaizzy/mlx-audio-swift`
-- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: stop clearing the Metal buffer pool on every step](https://github.com/Blaizzy/mlx-audio-swift/pull/229) `Blaizzy/mlx-audio-swift`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
