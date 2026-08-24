@@ -18,6 +18,7 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
 - ![Closed issue](icons/issue_closed.svg) [Prompt-cache reuse can return KV state that doesn't match the keyed prefix (windowed-cache trim contract)](https://github.com/ml-explore/mlx-lm/issues/1494) `ml-explore/mlx-lm`
 - ![Closed issue](icons/issue_closed.svg) [LRUPromptCache: one-token prefixes never match in PromptTrie.search; eviction ignores fetch recency (FIFO, not LRU)](https://github.com/ml-explore/mlx-lm/issues/1495) `ml-explore/mlx-lm`
 - ![Closed pull request](icons/pr_closed.svg) [Fix LRUPromptCache: return one-token prefix matches and refresh LRU recency on fetch](https://github.com/ml-explore/mlx-lm/pull/1496) `ml-explore/mlx-lm`
@@ -25,7 +26,6 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 - ![Closed pull request](icons/pr_closed.svg) [Prompt cache: don't reuse a slid windowed cache as a keyed prefix](https://github.com/ml-explore/mlx-lm/pull/1503) `ml-explore/mlx-lm`
 - ![Closed pull request](icons/pr_closed.svg) [.NET: Add SuppressAssistantName option to ChatClientAgentOptions](https://github.com/microsoft/agent-framework/pull/1822) `microsoft/agent-framework`
 - ![Answered discussion](icons/discussion_answered.svg) [Docs: "against independent benchmarks" link is dead (TechEmpower benchmarks site)](https://github.com/Kludex/starlette/discussions/3433) `Kludex/starlette`
-- ![Closed issue](icons/issue_closed.svg) [Recovered daemon-transport bounce leaves a permanent error on the workspace row](https://github.com/manaflow-ai/cmux/issues/8917) `manaflow-ai/cmux`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
