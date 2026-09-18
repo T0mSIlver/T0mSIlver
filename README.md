@@ -18,14 +18,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime decoder: append KV rows in place instead of rebuilding the window](https://github.com/Blaizzy/mlx-audio-swift/pull/264) `Blaizzy/mlx-audio-swift`
+- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime streaming: drop conv and adapter rows once they are consumed](https://github.com/Blaizzy/mlx-audio-swift/pull/263) `Blaizzy/mlx-audio-swift`
+- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime streaming: decode the transcript one token at a time](https://github.com/Blaizzy/mlx-audio-swift/pull/265) `Blaizzy/mlx-audio-swift`
 - ![Open pull request](icons/pr_open.svg) [fix(rpiv-ask-user-question): overlay stops hanging in esbuild ESM bundles](https://github.com/juicesharp/rpiv-mono/pull/209) `juicesharp/rpiv-mono`
 - ![Open issue](icons/issue_open.svg) [rpiv-ask-user-question: execute never returns when loaded from an esbuild ESM bundle](https://github.com/juicesharp/rpiv-mono/issues/208) `juicesharp/rpiv-mono`
 - ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
 - ![Closed issue](icons/issue_closed.svg) [Prompt-cache reuse can return KV state that doesn't match the keyed prefix (windowed-cache trim contract)](https://github.com/ml-explore/mlx-lm/issues/1494) `ml-explore/mlx-lm`
 - ![Closed issue](icons/issue_closed.svg) [LRUPromptCache: one-token prefixes never match in PromptTrie.search; eviction ignores fetch recency (FIFO, not LRU)](https://github.com/ml-explore/mlx-lm/issues/1495) `ml-explore/mlx-lm`
-- ![Closed pull request](icons/pr_closed.svg) [Fix LRUPromptCache: return one-token prefix matches and refresh LRU recency on fetch](https://github.com/ml-explore/mlx-lm/pull/1496) `ml-explore/mlx-lm`
-- ![Closed pull request](icons/pr_closed.svg) [Prompt cache: never reuse KV that fails to trim to the keyed prefix](https://github.com/ml-explore/mlx-lm/pull/1502) `ml-explore/mlx-lm`
-- ![Closed pull request](icons/pr_closed.svg) [Prompt cache: don't reuse a slid windowed cache as a keyed prefix](https://github.com/ml-explore/mlx-lm/pull/1503) `ml-explore/mlx-lm`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
