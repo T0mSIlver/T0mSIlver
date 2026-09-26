@@ -18,14 +18,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime streaming encoder: write KV rows into preallocated storage](https://github.com/Blaizzy/mlx-audio-swift/pull/272) `Blaizzy/mlx-audio-swift`
+- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime generateStream: build deltas from token bytes](https://github.com/Blaizzy/mlx-audio-swift/pull/273) `Blaizzy/mlx-audio-swift`
 - ![Open pull request](icons/pr_open.svg) [VoxtralRealtime streaming: reuse the mel Hann window instead of rebuilding it per append](https://github.com/Blaizzy/mlx-audio-swift/pull/271) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: decode the transcript one token at a time](https://github.com/Blaizzy/mlx-audio-swift/pull/265) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime decoder: append KV rows in place instead of rebuilding the window](https://github.com/Blaizzy/mlx-audio-swift/pull/264) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: drop conv and adapter rows once they are consumed](https://github.com/Blaizzy/mlx-audio-swift/pull/263) `Blaizzy/mlx-audio-swift`
 - ![Closed issue](icons/issue_closed.svg) [CI: macOS runner dies during "Run tests" since the Spark-TTS merge](https://github.com/Blaizzy/mlx-audio-swift/issues/267) `Blaizzy/mlx-audio-swift`
 - ![Open pull request](icons/pr_open.svg) [fix(rpiv-ask-user-question): overlay stops hanging in esbuild ESM bundles](https://github.com/juicesharp/rpiv-mono/pull/209) `juicesharp/rpiv-mono`
-- ![Open issue](icons/issue_open.svg) [rpiv-ask-user-question: execute never returns when loaded from an esbuild ESM bundle](https://github.com/juicesharp/rpiv-mono/issues/208) `juicesharp/rpiv-mono`
-- ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
