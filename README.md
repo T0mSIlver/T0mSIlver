@@ -18,14 +18,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Merged pull request](icons/pr_merged.svg) [fix(mistral): offer Monthly Plan in the menu bar metric picker](https://github.com/steipete/CodexBar/pull/4072) `steipete/CodexBar`
+- ![Merged pull request](icons/pr_merged.svg) [fix(mistral): price billing usage by event type, zone, and tier](https://github.com/steipete/CodexBar/pull/4076) `steipete/CodexBar`
+- ![Open pull request](icons/pr_open.svg) [Nemotron streaming: compute only new mel frames; keep MLX's buffer cache between steps](https://github.com/Blaizzy/mlx-audio-swift/pull/274) `Blaizzy/mlx-audio-swift`
+- ![Draft pull request](icons/pr_draft.svg) [Nemotron streaming: reuse decoder and encoder work that has not changed](https://github.com/Blaizzy/mlx-audio-swift/pull/275) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [feat(mistral): show the Monthly Plan in widgets](https://github.com/steipete/CodexBar/pull/4038) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): show the Monthly Plan in CLI text output](https://github.com/steipete/CodexBar/pull/4025) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): allow manual cookies on Linux](https://github.com/steipete/CodexBar/pull/4024) `steipete/CodexBar`
 - ![Open pull request](icons/pr_open.svg) [VoxtralRealtime streaming encoder: write KV rows into preallocated storage](https://github.com/Blaizzy/mlx-audio-swift/pull/272) `Blaizzy/mlx-audio-swift`
-- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime generateStream: build deltas from token bytes](https://github.com/Blaizzy/mlx-audio-swift/pull/273) `Blaizzy/mlx-audio-swift`
-- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime streaming: reuse the mel Hann window instead of rebuilding it per append](https://github.com/Blaizzy/mlx-audio-swift/pull/271) `Blaizzy/mlx-audio-swift`
-- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime streaming: decode the transcript one token at a time](https://github.com/Blaizzy/mlx-audio-swift/pull/265) `Blaizzy/mlx-audio-swift`
-- ![Merged pull request](icons/pr_merged.svg) [VoxtralRealtime decoder: append KV rows in place instead of rebuilding the window](https://github.com/Blaizzy/mlx-audio-swift/pull/264) `Blaizzy/mlx-audio-swift`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
