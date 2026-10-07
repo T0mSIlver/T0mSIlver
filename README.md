@@ -18,6 +18,7 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): offer Monthly Plan in the menu bar metric picker](https://github.com/steipete/CodexBar/pull/4072) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): price billing usage by event type, zone, and tier](https://github.com/steipete/CodexBar/pull/4076) `steipete/CodexBar`
 - ![Open pull request](icons/pr_open.svg) [Nemotron streaming: compute only new mel frames; keep MLX's buffer cache between steps](https://github.com/Blaizzy/mlx-audio-swift/pull/274) `Blaizzy/mlx-audio-swift`
@@ -25,7 +26,6 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 - ![Merged pull request](icons/pr_merged.svg) [feat(mistral): show the Monthly Plan in widgets](https://github.com/steipete/CodexBar/pull/4038) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): show the Monthly Plan in CLI text output](https://github.com/steipete/CodexBar/pull/4025) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): allow manual cookies on Linux](https://github.com/steipete/CodexBar/pull/4024) `steipete/CodexBar`
-- ![Open pull request](icons/pr_open.svg) [VoxtralRealtime streaming encoder: write KV rows into preallocated storage](https://github.com/Blaizzy/mlx-audio-swift/pull/272) `Blaizzy/mlx-audio-swift`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
