@@ -17,14 +17,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
-- ![Open pull request](icons/pr_open.svg) [fix(claude): keep a tall /usage panel on the PTY screen](https://github.com/steipete/CodexBar/pull/4392) `steipete/CodexBar`
-- ![Open issue](icons/issue_open.svg) [Claude CLI source: "Missing Current session." when the /usage panel is taller than the 50-row PTY](https://github.com/steipete/CodexBar/issues/4391) `steipete/CodexBar`
+- ![Merged pull request](icons/pr_merged.svg) [Cursor: read cursor-agent's login on Linux](https://github.com/steipete/CodexBar/pull/4397) `steipete/CodexBar`
+- ![Closed issue](icons/issue_closed.svg) [Claude CLI source: "Missing Current session." when the /usage panel is taller than the 50-row PTY](https://github.com/steipete/CodexBar/issues/4391) `steipete/CodexBar`
+- ![Merged pull request](icons/pr_merged.svg) [fix(claude): keep a tall /usage panel on the PTY screen](https://github.com/steipete/CodexBar/pull/4392) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [README: add Starbridge to integrations](https://github.com/steipete/CodexBar/pull/4371) `steipete/CodexBar`
 - ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): offer Monthly Plan in the menu bar metric picker](https://github.com/steipete/CodexBar/pull/4072) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [fix(mistral): price billing usage by event type, zone, and tier](https://github.com/steipete/CodexBar/pull/4076) `steipete/CodexBar`
 - ![Open pull request](icons/pr_open.svg) [Nemotron streaming: compute only new mel frames; keep MLX's buffer cache between steps](https://github.com/Blaizzy/mlx-audio-swift/pull/274) `Blaizzy/mlx-audio-swift`
-- ![Draft pull request](icons/pr_draft.svg) [Nemotron streaming: reuse decoder and encoder work that has not changed](https://github.com/Blaizzy/mlx-audio-swift/pull/275) `Blaizzy/mlx-audio-swift`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
