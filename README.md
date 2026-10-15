@@ -17,6 +17,7 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Closed issue](icons/issue_closed.svg) [TUI segfaults on small-ICU Node builds (Intl.Segmenter null deref) — RHEL nodejs without nodejs-full-i18n](https://github.com/earendil-works/pi/issues/6359) `earendil-works/pi`
 - ![Closed issue](icons/issue_closed.svg) [rpiv-ask-user-question: execute never returns when loaded from an esbuild ESM bundle](https://github.com/juicesharp/rpiv-mono/issues/208) `juicesharp/rpiv-mono`
 - ![Merged pull request](icons/pr_merged.svg) [fix(rpiv-ask-user-question): no runtime import cycle, so esbuild ESM bundles stop hanging (#208)](https://github.com/juicesharp/rpiv-mono/pull/209) `juicesharp/rpiv-mono`
 - ![Merged pull request](icons/pr_merged.svg) [Cursor: read cursor-agent's login on Linux](https://github.com/steipete/CodexBar/pull/4397) `steipete/CodexBar`
@@ -24,7 +25,6 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 - ![Merged pull request](icons/pr_merged.svg) [fix(claude): keep a tall /usage panel on the PTY screen](https://github.com/steipete/CodexBar/pull/4392) `steipete/CodexBar`
 - ![Merged pull request](icons/pr_merged.svg) [README: add Starbridge to integrations](https://github.com/steipete/CodexBar/pull/4371) `steipete/CodexBar`
 - ![Open issue](icons/issue_open.svg) [Plugin userConfig options are not expanded in http hook headers (${CLAUDE_PLUGIN_OPTION_*} resolves empty)](https://github.com/anthropics/claude-code/issues/81742) `anthropics/claude-code`
-- ![Merged pull request](icons/pr_merged.svg) [fix(mistral): offer Monthly Plan in the menu bar metric picker](https://github.com/steipete/CodexBar/pull/4072) `steipete/CodexBar`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
