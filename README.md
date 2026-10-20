@@ -8,6 +8,7 @@ AI engineer. I work on realtime speech on Apple Silicon and local GPUs, and on t
 
 - **[mlx-audio-swift](https://github.com/Blaizzy/mlx-audio-swift/pulls?q=is%3Apr+author%3AT0mSIlver)**. Eight merged PRs on the Voxtral Realtime streaming path. An incremental mel and conv front end took per-utterance work from O(N²) to O(N), and in-place KV append with token-by-token decode keeps memory flat. Streaming went from about 1.9× slower than realtime to 0.76 RTF, and live text now keeps up for three hours instead of falling behind after fifteen minutes. I also publish the [4-bit tied-head checkpoint](https://huggingface.co/T0mSIlver/Voxtral-Mini-4B-Realtime-2602-4bit-qhead) it loads. `Swift` `MLX`
 - **[localvoxtral](https://github.com/T0mSIlver/localvoxtral)**. A native macOS menu-bar app for realtime dictation, local or against any OpenAI Realtime-compatible server. Words appear while you're still speaking. It finds the Claude Code session under your cursor and polishes the text against that session's screen and the repo's vocabulary. People I don't know use it and file issues. `Swift`
+- **[Self-hosted Voxtral STT for LiveKit Agents](https://github.com/T0mSIlver/agents/tree/feat/mistralai-self-hosted-stt)**. `mistralai.SelfHostedSTT` streams a LiveKit voice agent's audio to Voxtral Realtime on your own vLLM server, with no API key. On an RTX 3090 the final transcript lands 466 to 540 ms after the end of speech, over five runs. `Python`
 
 #### Agent tooling
 
