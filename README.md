@@ -17,6 +17,7 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Open pull request](icons/pr_open.svg) [feat(turn-priority-fairness): enable tool calling on the GPU vLLM overlay](https://github.com/llm-d/llm-d/pull/2905) `llm-d/llm-d`
 - ![Draft pull request](icons/pr_draft.svg) [Qwen3-ASR: default to 60 s chunks instead of 1200 s](https://github.com/Blaizzy/mlx-audio-swift/pull/310) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [TTS: Kokoro and Kitten text processors use the loadModel cache](https://github.com/Blaizzy/mlx-audio-swift/pull/307) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [Core: reuse a cached snapshot that has no config.json](https://github.com/Blaizzy/mlx-audio-swift/pull/296) `Blaizzy/mlx-audio-swift`
@@ -24,7 +25,6 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 - ![Merged pull request](icons/pr_merged.svg) [Whisper: add a translate task to STTGenerateParameters](https://github.com/Blaizzy/mlx-audio-swift/pull/295) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [Qwen3-ASR: cap maxTokens per chunk, not per file](https://github.com/Blaizzy/mlx-audio-swift/pull/294) `Blaizzy/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [STT: forward the loadModel cache to the six loaders that dropped it](https://github.com/Blaizzy/mlx-audio-swift/pull/293) `Blaizzy/mlx-audio-swift`
-- ![Merged pull request](icons/pr_merged.svg) [Build against mlx-swift main (#469): Parakeet and Qwen3-TTS compile calls](https://github.com/Blaizzy/mlx-audio-swift/pull/292) `Blaizzy/mlx-audio-swift`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
