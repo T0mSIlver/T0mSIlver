@@ -17,14 +17,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
-- ![Open pull request](icons/pr_open.svg) [server : realtime: send an error event instead of crashing on exceptions](https://github.com/ggml-org/llama.cpp/pull/31632) `ggml-org/llama.cpp`
-- ![Open issue](icons/issue_open.svg) [Misc. bug: server: a tool with an invalid schema in /v1/realtime crashes llama-server](https://github.com/ggml-org/llama.cpp/issues/31626) `ggml-org/llama.cpp`
+- ![Open pull request](icons/pr_open.svg) [NemotronASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio-swift/pull/374) `Neywa-Labs/mlx-audio-swift`
+- ![Open pull request](icons/pr_open.svg) [server : reject a realtime session.update with another sample rate](https://github.com/ggml-org/llama.cpp/pull/31697) `ggml-org/llama.cpp`
+- ![Open issue](icons/issue_open.svg) [Misc. bug: server: realtime session.update asking for 24 kHz is accepted, the audio is still read as 16 kHz](https://github.com/ggml-org/llama.cpp/issues/31696) `ggml-org/llama.cpp`
+- ![Open pull request](icons/pr_open.svg) [Nemotron ASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio/pull/1127) `Neywa-Labs/mlx-audio`
+- ![Closed issue](icons/issue_closed.svg) [Misc. bug: server: a tool with an invalid schema in /v1/realtime crashes llama-server](https://github.com/ggml-org/llama.cpp/issues/31626) `ggml-org/llama.cpp`
+- ![Merged pull request](icons/pr_merged.svg) [server : realtime: send an error event instead of crashing on exceptions](https://github.com/ggml-org/llama.cpp/pull/31632) `ggml-org/llama.cpp`
 - ![Open pull request](icons/pr_open.svg) [llm: drop tool calls cut off by the token limit](https://github.com/ollama/ollama/pull/19494) `ollama/ollama`
 - ![Open pull request](icons/pr_open.svg) [\[Bugfix\]\[Realtime\] Ignore a final commit when no transcription is running](https://github.com/vllm-project/vllm/pull/65426) `vllm-project/vllm`
-- ![Open pull request](icons/pr_open.svg) [\[Fix\] deps: add websockets so /v1/realtime works without extras](https://github.com/sgl-project/sglang/pull/48193) `sgl-project/sglang`
-- ![Open pull request](icons/pr_open.svg) [\[Fix\] anthropic: don't reject adaptive thinking when there is no reasoning parser](https://github.com/sgl-project/sglang/pull/48175) `sgl-project/sglang`
-- ![Open issue](icons/issue_open.svg) [Tool call cut off by `num_predict` / `max_tokens` returns HTTP 500 on GGUF-template models](https://github.com/ollama/ollama/issues/19493) `ollama/ollama`
-- ![Open pull request](icons/pr_open.svg) [server : report stop_sequence as stop_reason in /v1/messages](https://github.com/ggml-org/llama.cpp/pull/31554) `ggml-org/llama.cpp`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
