@@ -17,14 +17,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Merged pull request](icons/pr_merged.svg) [feat(turn-priority-fairness): enable tool calling on the GPU vLLM overlay](https://github.com/llm-d/llm-d/pull/2905) `llm-d/llm-d`
+- ![Merged pull request](icons/pr_merged.svg) [Nemotron ASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio/pull/1127) `Neywa-Labs/mlx-audio`
 - ![Open pull request](icons/pr_open.svg) [NemotronASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio-swift/pull/374) `Neywa-Labs/mlx-audio-swift`
 - ![Open pull request](icons/pr_open.svg) [server : reject a realtime session.update with another sample rate](https://github.com/ggml-org/llama.cpp/pull/31697) `ggml-org/llama.cpp`
 - ![Open issue](icons/issue_open.svg) [Misc. bug: server: realtime session.update asking for 24 kHz is accepted, the audio is still read as 16 kHz](https://github.com/ggml-org/llama.cpp/issues/31696) `ggml-org/llama.cpp`
-- ![Open pull request](icons/pr_open.svg) [Nemotron ASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio/pull/1127) `Neywa-Labs/mlx-audio`
 - ![Closed issue](icons/issue_closed.svg) [Misc. bug: server: a tool with an invalid schema in /v1/realtime crashes llama-server](https://github.com/ggml-org/llama.cpp/issues/31626) `ggml-org/llama.cpp`
 - ![Merged pull request](icons/pr_merged.svg) [server : realtime: send an error event instead of crashing on exceptions](https://github.com/ggml-org/llama.cpp/pull/31632) `ggml-org/llama.cpp`
 - ![Open pull request](icons/pr_open.svg) [llm: drop tool calls cut off by the token limit](https://github.com/ollama/ollama/pull/19494) `ollama/ollama`
-- ![Open pull request](icons/pr_open.svg) [\[Bugfix\]\[Realtime\] Ignore a final commit when no transcription is running](https://github.com/vllm-project/vllm/pull/65426) `vllm-project/vllm`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
