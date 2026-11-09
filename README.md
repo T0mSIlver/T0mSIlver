@@ -17,9 +17,9 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
+- ![Open pull request](icons/pr_open.svg) [server : report stop_sequence as stop_reason in /v1/messages](https://github.com/ggml-org/llama.cpp/pull/31554) `ggml-org/llama.cpp`
 - ![Closed pull request](icons/pr_closed.svg) [server : reject a realtime session.update with another sample rate](https://github.com/ggml-org/llama.cpp/pull/31697) `ggml-org/llama.cpp`
 - ![Merged pull request](icons/pr_merged.svg) [NemotronASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio-swift/pull/374) `Neywa-Labs/mlx-audio-swift`
-- ![Open pull request](icons/pr_open.svg) [server : report stop_sequence as stop_reason in /v1/messages](https://github.com/ggml-org/llama.cpp/pull/31554) `ggml-org/llama.cpp`
 - ![Merged pull request](icons/pr_merged.svg) [feat(turn-priority-fairness): enable tool calling on the GPU vLLM overlay](https://github.com/llm-d/llm-d/pull/2905) `llm-d/llm-d`
 - ![Merged pull request](icons/pr_merged.svg) [Nemotron ASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio/pull/1127) `Neywa-Labs/mlx-audio`
 - ![Open issue](icons/issue_open.svg) [Misc. bug: server: realtime session.update asking for 24 kHz is accepted, the audio is still read as 16 kHz](https://github.com/ggml-org/llama.cpp/issues/31696) `ggml-org/llama.cpp`
