@@ -17,14 +17,14 @@ AI engineer — Local inference and agentic developer tooling. I build end-to-en
 #### Recently in other projects
 
 <!-- recent_contributions starts -->
-- ![Open pull request](icons/pr_open.svg) [server : report stop_sequence as stop_reason in /v1/messages](https://github.com/ggml-org/llama.cpp/pull/31554) `ggml-org/llama.cpp`
+- ![Open pull request](icons/pr_open.svg) [server : realtime: reject odd-length audio appends](https://github.com/ggml-org/llama.cpp/pull/31991) `ggml-org/llama.cpp`
+- ![Draft pull request](icons/pr_draft.svg) [Qwen3-ASR: default to 60 s chunks instead of 1200 s](https://github.com/Neywa-Labs/mlx-audio-swift/pull/310) `Neywa-Labs/mlx-audio-swift`
+- ![Merged pull request](icons/pr_merged.svg) [Nemotron: honor transcription_delay_ms in streaming sessions](https://github.com/Neywa-Labs/mlx-audio/pull/1157) `Neywa-Labs/mlx-audio`
+- ![Closed issue](icons/issue_closed.svg) [Misc. bug: server: realtime session.update asking for 24 kHz is accepted, the audio is still read as 16 kHz](https://github.com/ggml-org/llama.cpp/issues/31696) `ggml-org/llama.cpp`
 - ![Closed pull request](icons/pr_closed.svg) [server : reject a realtime session.update with another sample rate](https://github.com/ggml-org/llama.cpp/pull/31697) `ggml-org/llama.cpp`
+- ![Open pull request](icons/pr_open.svg) [server : report stop_sequence as stop_reason in /v1/messages](https://github.com/ggml-org/llama.cpp/pull/31554) `ggml-org/llama.cpp`
 - ![Merged pull request](icons/pr_merged.svg) [NemotronASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio-swift/pull/374) `Neywa-Labs/mlx-audio-swift`
 - ![Merged pull request](icons/pr_merged.svg) [feat(turn-priority-fairness): enable tool calling on the GPU vLLM overlay](https://github.com/llm-d/llm-d/pull/2905) `llm-d/llm-d`
-- ![Merged pull request](icons/pr_merged.svg) [Nemotron ASR: add Nemotron Unified](https://github.com/Neywa-Labs/mlx-audio/pull/1127) `Neywa-Labs/mlx-audio`
-- ![Open issue](icons/issue_open.svg) [Misc. bug: server: realtime session.update asking for 24 kHz is accepted, the audio is still read as 16 kHz](https://github.com/ggml-org/llama.cpp/issues/31696) `ggml-org/llama.cpp`
-- ![Closed issue](icons/issue_closed.svg) [Misc. bug: server: a tool with an invalid schema in /v1/realtime crashes llama-server](https://github.com/ggml-org/llama.cpp/issues/31626) `ggml-org/llama.cpp`
-- ![Merged pull request](icons/pr_merged.svg) [server : realtime: send an error event instead of crashing on exceptions](https://github.com/ggml-org/llama.cpp/pull/31632) `ggml-org/llama.cpp`
 <!-- recent_contributions ends -->
 
 #### Elsewhere
